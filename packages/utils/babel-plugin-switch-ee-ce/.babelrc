@@ -1,0 +1,19 @@
+{
+  "presets": [
+  ["@babel/preset-env",
+    {
+      "targets": {
+        "node": "14"
+     },
+      "useBuiltIns": "usage"
+    }
+  ]
+],
+  "plugins": ["@babel/plugin-transform-runtime",
+    {
+      "absoluteRuntime": false,
+      "helpers": true,
+      "regenerator": true
+    }
+  ]
+}
